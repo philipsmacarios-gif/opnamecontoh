@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplikasi Stock Opname Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Stock Opname Produk</h2>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Kode Produk</th>
+        <th>Nama Produk</th>
+        <th>Stok Sistem</th>
+        <th>Stok Fisik</th>
+        <th>Selisih</th>
+      </tr>
+    </thead>
+    <tbody id="produk-table"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+</body>
+</html>
+
+<button onclick="exportToExcel()">Export ke Excel</button>
